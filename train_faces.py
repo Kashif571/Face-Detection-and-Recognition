@@ -7,11 +7,11 @@ import os
 
 #Getting People Names from the Test Data Folder
 people = []
-for i in os.listdir(r'E:/Kashif Iftikhar/University/FYP/Code/Python/PR New/Test Data'):
+for i in os.listdir(r'./Test Data'):
     people.append(i)
 
 #Test Data Folder Path
-dir= r"E:/Kashif Iftikhar/University/FYP/Code/Python/PR New/Test Data"
+dir= r"./Test Data"
 
 features=[]
 labels=[]

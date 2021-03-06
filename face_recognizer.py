@@ -6,7 +6,7 @@ haar_cascade=cv2.CascadeClassifier('haar_faces.xml')
 
 #Getting People Names from the Test Data Folder
 people =[]
-for i in os.listdir(r'E:/Kashif Iftikhar/University/FYP/Code/Python/PR New/Test Data/'):
+for i in os.listdir(r'./Test Data/'):
     people.append(i)
 
 #Instantiate the Face Recognizer
@@ -16,7 +16,7 @@ face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 face_recognizer.read('trained_faces.yml')
 
 #Reading Image
-img=cv2.imread(r'E:/Kashif Iftikhar/University/FYP/Code/Python/PR New/Validation Data/Hassan Zamir/4.jpg')
+img=cv2.imread(r'./Validation Data/Tony Stark/1.jpg')
 #Adding Blur
 # blur_Image = cv2.medianBlur(img, 9)
 
